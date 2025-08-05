@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Risvana's Web Profile</title>
+  <style>
+    :root {
+      --primary-color: #0077b6;
+      --accent-color: #e0f7fa;
+      --background-color: #f9fbfc;
+      --font-family: 'Segoe UI', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--background-color);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #005f8a;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .friends-section {
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    .friends-section h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    .friend-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .friend-card {
+      background-color: var(--accent-color);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .friend-card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #005f8a;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Risvana's Web Profile</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Hello, I'm Risvana</h1>
+    <p>I'm an animator and graphic designer who loves bringing ideas to life through motion and visuals. Welcome to my creative space!</p>
+  </section>
+
+  <section class="friends-section">
+    <h2>Friends</h2>
+    <div class="friend-grid">
+      <div class="friend-card">Ashfiqua</div>
+      <div class="friend-card">Dilna</div>
+      <div class="friend-card">Hiba</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Risvana. All rights reserved.
+  </footer>
+
+</body>
+</html>
